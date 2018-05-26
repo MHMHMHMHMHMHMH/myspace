@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的相册</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="js/jquery.min.js"></script>
+<script src="thing.js"></script>
+</head>
+
+<body>
+	
+	<div id="banner">
+		
+		<div id="touxiang"></div>
+	</div>
+	<div id="nav">
+	    <ul>
+		    <li><a href="主界面.html">首页</a></li>
+			<li><a href="我的文章.html">文章</a></li>
+			<li><a href="#">相册</a></li>
+		</ul>
+	</div>
+	<div class="testbody1">
+		<div id="album" class="scroll">
+			<div id="ls">相册列表</div>
+			
+			<div class="al">
+				<div id="list1" class="list">
+					<div class="ex">
+						<img src="images/1/1.jpg"/>
+					</div>
+					<p class="style1">相册一</p>
+				</div>
+				<div id="list2"  class="list">
+					<div class="ex">
+						<img src="images/2/t.png"/>
+					</div>
+					
+					<p class="style1">相册二</p>
+				</div>
+				<div id="list3"  class="list">
+					<div class="ex">
+						<img src="images/2/t.png"/>
+					</div>
+					
+					<p class="style1">相册三</p>
+				</div>
+				<div id="list3"  class="list">
+					<div class="ex">
+						<img src="images/2/t.png"/>
+					</div>
+					
+					<p class="style1">相册四</p>
+				</div>
+				<div id="list3"  class="list">
+					<div class="ex">
+						<img src="images/2/t.png"/>
+					</div>
+					
+					<p class="style1">相册五</p>
+				</div>
+				
+			</div>
+			
+			
+	    </div>
+		<div id="photo" class="scroll">
+			<div id="ls"></div>
+		</div>	
+		<script>
+				$("#list1").click(function(){
+					$("#photo").load("images/1/相册1.html");
+					
+                }); 
+			    $("#list2").click(function(){
+					$("#photo").load("images/2/相册2.html");
+					
+                }); 
+			</script>
+	</div>
+	
+</body>
+</html>
